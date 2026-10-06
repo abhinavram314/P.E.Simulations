@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-sans: 'Outfit', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #030712;
+    color: #f3f4f6;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom engineering scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Animations for electron / conduction flow */
+@keyframes dashFlow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+.animate-current-flow {
+  stroke-dasharray: 6 6;
+  animation: dashFlow 1s linear infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.9; filter: drop-shadow(0 0 4px currentColor); }
+  50% { opacity: 0.4; filter: drop-shadow(0 0 1px currentColor); }
+}
+
+.animate-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}

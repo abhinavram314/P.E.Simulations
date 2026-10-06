@@ -1,0 +1,6 @@
+{
+  "name": "PowerLab - Rigorous Power Electronics & Semiconductor Physics Lab",
+  "description": "High-fidelity interactive power electronics laboratory with state-space physics engine, 1Φ/3Φ topologies, semiconductor switching transients, harmonics FFT, and dynamic vector schematics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
