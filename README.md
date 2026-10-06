@@ -63,12 +63,3 @@ Start the development server:
 npm run dev
 ```
 Open your browser and navigate to the URL provided in the terminal (usually `http://localhost:3000`).
-
-## 🎨 Theme Customization
-The application uses a custom earthy/coffee color palette designed to reduce eye strain during extended simulation sessions.
-* **Backgrounds:** Espresso (`#1a120b`) & Chocolate (`#2c1e16`)
-* **Accents:** Caramel (`amber-500`) & Cognac (`orange-600`)
-* **Shadows:** Ambient warm glows (`shadow-orange-950`)
-
----
-*Developed for rigorous power electronics and semiconductor physics analysis.*
